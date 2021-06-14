@@ -9,6 +9,11 @@ export default new Router({
       path: '/',
       name: 'index',
       component: () => import('@/components/App')
+    },
+    {
+      path: '/tts',
+      name: 'tts',
+      component: () => import('@/components/App')
     }
   ]
 })
