@@ -67,6 +67,7 @@
          <audio ref="audio"
             @pause="onPause"
             @play="onPlay"
+            autoplay
             src="" controls="controls"></audio>
         <!-- 音频播放控件 -->
         <div>
@@ -186,6 +187,12 @@ export default {
         .then(function () {
           loadingInstance.close()
         })
+    }
+  },
+  filters: {
+    // 使用组件过滤器来动态改变按钮的显示
+    transPlayPause(value) {
+      return value ? '暂停' : '播放'
     }
   }
 }
