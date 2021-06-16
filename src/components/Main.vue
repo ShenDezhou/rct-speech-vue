@@ -191,7 +191,7 @@ export default {
   },
   filters: {
     // 使用组件过滤器来动态改变按钮的显示
-    transPlayPause(value) {
+    transPlayPause (value) {
       return value ? '暂停' : '播放'
     }
   }
